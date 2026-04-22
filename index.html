@@ -6,21 +6,20 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
 <style>
 body {
     background: #4ea3d8;
-    font-family: Arial;
 }
 
-.container {
-    width: 90%;
-    margin: 20px auto;
+.container-box {
     background: white;
     padding: 15px;
+    margin-top: 20px;
     border-radius: 10px;
 }
 
-/* 區塊樣式 */
 .box {
     height: 100px;
     margin-bottom: 10px;
@@ -30,51 +29,40 @@ body {
 .green { background: #a8cf45; }
 .blue { background: #1eb5c1; }
 .gray { background: #cfd8dc; }
-
-/* 預設：手機（直排） */
-.row {
-    display: block;
-}
-
-/* 🔥 關鍵：螢幕大於480px 時改版 */
-@media (min-width: 480px) {
-
-    .row {
-        display: flex;
-        gap: 10px;
-    }
-
-    .blue-group .box {
-        flex: 1;
-    }
-
-    .gray-group .box {
-        flex: 1;
-    }
-}
 </style>
 </head>
 
 <body>
 
-<div class="container">
-
-    <!-- 綠色 -->
+<div class="container container-box">
+    
     <div class="box green"></div>
 
-    <!-- 藍色區 -->
-    <div class="row blue-group">
-        <div class="box blue"></div>
-        <div class="box blue"></div>
-        <div class="box blue"></div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-4">
+            <div class="box blue"></div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+            <div class="box blue"></div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+            <div class="box blue"></div>
+        </div>
     </div>
 
-    <!-- 灰色區 -->
-    <div class="row gray-group">
-        <div class="box gray"></div>
-        <div class="box gray"></div>
-        <div class="box gray"></div>
-        <div class="box gray"></div>
+    <div class="row">
+        <div class="col-xs-6 col-sm-3">
+            <div class="box gray"></div>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+            <div class="box gray"></div>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+            <div class="box gray"></div>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+            <div class="box gray"></div>
+        </div>
     </div>
 
 </div>

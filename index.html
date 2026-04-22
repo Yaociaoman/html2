@@ -12,13 +12,11 @@ body {
     font-family: Arial;
 }
 
-/* 藍色背景 */
 .wrapper {
     background: #5aaae6;
     padding: 20px;
 }
 
-/* 白色卡片 */
 .container {
     background: #eeeeee;
     border-radius: 12px;
@@ -27,14 +25,12 @@ body {
     margin: auto;
 }
 
-/* 綠色區塊 */
 .header {
     background: #a8cf45;
     height: 100px;
     margin-bottom: 10px;
 }
 
-/* 中間藍色區塊 */
 .middle {
     display: flex;
     gap: 10px;
@@ -47,7 +43,6 @@ body {
     flex: 1;
 }
 
-/* 底部灰色區塊 */
 .bottom {
     display: flex;
     gap: 10px;
@@ -60,11 +55,10 @@ body {
     flex: 1 1 calc(25% - 10px);
 }
 
-/* 📱 小於 480px（手機版） */
 @media (max-width: 480px) {
 
     .middle {
-        flex-direction: column;   /* ⭐ 變直排 */
+        flex-direction: column;
     }
 
     .middle div {
@@ -72,7 +66,7 @@ body {
     }
 
     .bottom div {
-        flex: 1 1 calc(50% - 10px);  /* ⭐ 2個一排 */
+        flex: 1 1 calc(50% - 10px);  
     }
 }
 

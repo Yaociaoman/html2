@@ -1,35 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Outline example</title>
+<meta name="viewport" content="width=dvice-width,initial-scale=1">
+<title>Screen flexible</title>
 <style>
-h1{
-  font-size: 40px;
-  font-style: normal;
-  text-decoration: overline;
-  text-shadow:2px 2px pink;
-}
-h2{
-  font-size: 30px;
-  border: 2px solid black;
-  outline-style: outset;
-  outline-color: yellow;
-  font-style: italic;
-}
-h3{
-  font-size: 20px;
-  text-decoration: underline;
-  text-align: right;
-  font-style: normal;
-}
+@midia screen and (max-width: 900px) and (min-width: 600px), (min-width:1100px){
+  div.example{
+    font-size: 50px;
+    padding: 50px;
+    border: 8px solid black;
+    background: yellow;
 </style>
 </head>
 
 <body>
 
-<h1>This is heading 1</h1>
-<h2>This is heading 2</h2>
-<h3>This is heading 3</h3>
-
+<div class="example">Example DIV.
+</div>
+  
 </body>
 </html>

@@ -6,7 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Bootstrap 3 -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
 <style>
@@ -22,32 +21,30 @@ body {
 }
 
 .box {
+    height: 100px;
     margin-bottom: 10px;
     border-radius: 5px;
 }
 
-/* 🔹 預設（手機） */
 .green { 
-    background: #a8cf45; 
+    background: #a8cf45;
+    height: 120px;
+}
+.blue { 
+    background: #1eb5c1;
+    height: 100px;
+}
+.gray { 
+    background: #cfd8dc;
     height: 120px;
 }
 
-.blue { 
-    background: #1eb5c1; 
-    height: 100px;
-}
-
-.gray { 
-    background: #cfd8dc; 
-    height: 80px;
-}
-
-/* 🔥 大螢幕時讓綠色變更大 */
 @media (min-width: 768px) {
     .green {
         height: 180px;
     }
 }
+    
 </style>
 </head>
 
@@ -55,10 +52,8 @@ body {
 
 <div class="container container-box">
 
-    <!-- 綠色 -->
     <div class="box green"></div>
 
-    <!-- 藍色 -->
     <div class="row">
         <div class="col-xs-12 col-sm-4">
             <div class="box blue"></div>
@@ -71,8 +66,9 @@ body {
         </div>
     </div>
 
-    <!-- 灰色 -->
+
     <div class="row">
+    
         <div class="col-xs-6 col-sm-3">
             <div class="box gray"></div>
         </div>
@@ -90,4 +86,4 @@ body {
 </div>
 
 </body>
-</html>
+</html>  

@@ -1,95 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Responsive Layout</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-<style>
-body {
-    background: #4ea3d8;
-}
-
-.container-box {
-    background: white;
-    padding: 15px;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-
-.box {
-    height: 100px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
-
-.green { 
-    background: #a8cf45;
-    height: 120px;
-}
-.blue { 
-    background: #1eb5c1;
-    height: 100px;
-}
-.gray { 
-    background: #cfd8dc;
-    height: 120px;
-}
-
-@media (min-width: 768px) {
-    .green {
-        height: 180px;
-    }
-    .blue{
-        height: 140px;
-    }
-    .gray  { 
-        height: 100px; 
-    } 
-}
-    
-</style>
+    <meta charset="UTF-8">
+    <title>Object Properties Demo</title>
 </head>
-
 <body>
 
-<div class="container container-box">
+<h2>Deleting a Property</h2>
+<p id="demo"></p>
 
-    <div class="box green"></div>
+<script>
+    var Person = {
+        firstName: "Tony",
+        lastName: "Lee",
+        age: 50,
+        eyeColor: "Blue"
+    };
 
-    <div class="row">
-        <div class="col-xs-12 col-sm-4">
-            <div class="box blue"></div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-            <div class="box blue"></div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-            <div class="box blue"></div>
-        </div>
-    </div>
+    delete Person.age;
+
+    document.getElementById("demo").innerHTML = person.firstname + " " + person.lastname + " is " + person.age + "and his eyecolor is " + person.eyeColor;
 
 
-    <div class="row">
-    
-        <div class="col-xs-6 col-sm-3">
-            <div class="box gray"></div>
-        </div>
-        <div class="col-xs-6 col-sm-3">
-            <div class="box gray"></div>
-        </div>
-        <div class="col-xs-6 col-sm-3">
-            <div class="box gray"></div>
-        </div>
-        <div class="col-xs-6 col-sm-3">
-            <div class="box gray"></div>
-        </div>
-    </div>
-
-</div>
+</script>
 
 </body>
-</html>  
+</html>
